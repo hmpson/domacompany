@@ -177,3 +177,25 @@ table.hours td small{display:block;font-size:13.5px;color:var(--muted);line-heig
 .about-ph{aspect-ratio:1/1;max-height:520px}
 .about-ph img{object-position:50% 62%}
 @media(max-width:980px){.about-ph{aspect-ratio:4/3;max-height:340px}}
+
+/* brand polish */
+.eyebrow-d{font-size:13px;letter-spacing:.25em;color:#d3a27f;margin-bottom:16px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn.ghost,.dark .btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
+.dark .btn.ghost:hover{background:rgba(255,255,255,.1)}
+.dark .wrap.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:80px;padding-top:48px;border-top:1px solid #3a2a25}
+.pillars>div{padding:0 32px 0 0}
+.pillars span{font-size:13px;letter-spacing:.2em;color:#d3a27f}
+.pillars h3{font-size:20px;font-weight:400;margin:8px 0 8px}
+.pillars p{font-size:14.5px;color:#c9bcb5}
+.status{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;color:var(--muted);background:var(--gray);padding:8px 16px;border-radius:999px;margin-bottom:24px}
+.status[hidden]{display:none}
+.status i{width:9px;height:9px;border-radius:50%;background:#b9afa9}
+.status.open{color:#2f6b3a}
+.status.open i{background:#3d9a52}
+:focus-visible{outline:2px solid var(--maroon);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.slide.on{animation:none}}
+@media(max-width:980px){
+  .dark .wrap.pillars{grid-template-columns:1fr;gap:28px;margin-top:48px;padding-top:36px}
+  .pillars>div{padding:0}
+}
