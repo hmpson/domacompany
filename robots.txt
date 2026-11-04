@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://domacompany.co.kr/sitemap.xml
