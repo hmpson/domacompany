@@ -199,3 +199,15 @@ table.hours td small{display:block;font-size:13.5px;color:var(--muted);line-heig
   .dark .wrap.pillars{grid-template-columns:1fr;gap:28px;margin-top:48px;padding-top:36px}
   .pillars>div{padding:0}
 }
+
+/* 사진이 과하게 확대되지 않도록: 사진 전체를 보여 주고 빈 곳은 흐린 배경으로 채움 */
+.panel .ph{display:block;background:#1c1210}
+.panel .ph img{position:absolute;inset:0;width:100%;height:100%}
+.panel .ph .bg{object-fit:cover;filter:blur(26px) brightness(.55);transform:scale(1.15)}
+.panel .ph .fg{object-fit:contain}
+.about-ph{aspect-ratio:4/5;max-height:none}
+@media(max-width:980px){.about-ph{aspect-ratio:4/3;max-height:340px}}
+
+/* 넓은 화면에서도 본문(.wrap)과 같은 중앙 기준으로 정렬 */
+.panel{right:max(32px,calc((100% - 1200px)/2 + 32px));width:calc(min(100%,1200px)/2 - 20px)}
+@media(max-width:980px){.panel{right:auto;width:100%}}
